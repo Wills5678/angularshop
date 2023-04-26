@@ -1,0 +1,170 @@
+.form-control {
+  border-radius: 20px; /* adjust border-radius to your liking */
+  position: relative;
+}
+.bg-primary {
+  background-color: #0056a8 !important;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.btn-light{
+  border-color: #0056a8!important;
+  color: #fff!important;
+}
+.btn-light i{
+  color: #fff!important;
+}
+.btn-light:hover {
+   color: #fff!important;
+   background-color: #004384;
+ }
+.search-remove {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+}.custom-height {
+   padding: 40px 0;
+ }
+
+.custom-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  padding: 0;
+}
+
+.search-results {
+  position: absolute;
+  height: 200px;
+  z-index: 12;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  max-height: 250px;
+  overflow-y: auto;
+}.search-result-item {
+   display: grid;
+   grid-template-columns: 1fr auto; /* Switched positions of '1fr' and 'auto' */
+   grid-column-gap: 10px;
+   grid-row-gap: 5px;
+   align-items: center;
+   height: 100%;
+   padding: 5px;
+ }
+
+.search-result-item img {
+  grid-row: 1; /* Position the image in the first row */
+}
+
+.search-result-item h5 {
+  grid-row: 2; /* Position the <p> in the second row */
+}
+.card {
+  background-color: #fff;
+  border-color: transparent!important;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card img {
+  padding: 10px;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-content {
+  padding: 5px;
+}
+
+.card h5 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+  margin: 8px 0 0;
+}
+.input-group-lg {
+  position: relative;
+}
+
+.form-control-lg:focus + .search-results {
+  display: block;
+}
+
+.form-control-lg:not(:focus) + .search-results {
+  display: none;
+}
+.custom-btn i {
+  margin-bottom: 5px;
+}
+
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #0056a8;
+   height: 100px;
+   text-align: center;
+   padding-top: 20px;
+   z-index: 2; /* make sure the header is on top */
+ }
+
+.navbar {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #f2f2f2;
+  z-index: 1; /* make sure the navbar is on top */
+  transition: top 0.3s ease-in-out; /* add a transition effect */
+}
+
+header:hover nav {
+  top: 90px; /* show the navbar when the header is hovered over */
+}
+.hidden {
+  top: -80px;
+}
+.content {
+  margin-top: 200px; /* make some space for the header and navbar */
+}
+/*.navbar:hover {*/
+/*  top: 0; !* show the navbar when hovering over it *!*/
+/*}*/
+
+
+/*header {*/
+/*  position: relative;*/
+/*  height: 80px; !* set the height of the header *!*/
+/*}*/
+
+/*nav {*/
+/*  position: fixed;*/
+/*  top: -80px; !* move the navbar offscreen initially *!*/
+/*  width: 100%;*/
+/*  z-index: 1;*/
+/*  transition: top 0.3s ease-in-out; !* add a transition effect *!*/
+/*}*/
+
+/*header:hover nav {*/
+/*  top: 0; !* show the navbar when the header is hovered over *!*/
+/*}*/
