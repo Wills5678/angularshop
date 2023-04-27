@@ -3,84 +3,84 @@
         (mouseleave)="hideNavbar()">
   <section class="header header-main">
     <div class="container" >
-    <div class="row gy-3 align-items-center">
-      <div class="col-lg-1 col-sm-4 col-4">
-        <a href="#" class="navbar-brand" style="color: white!important;">
-          PACCOM
-        </a> <!-- brand end.// -->
-      </div>
-      <div class="order-lg-last col-lg-3 col-sm-8 col-8">
-        <div class="d-flex justify-content-end">
-          <a href="#" class="btn btn-light custom-btn flex-fill">
-            <i class="fa fa-database fa-2x d-block mb-1"></i>
-            <span class="d-none d-sm-inline-block">Hub</span>
-          </a>
-          <a href="#" class="btn btn-light custom-btn flex-fill">
-            <i class="fa fa-user fa-2x d-block mb-1"></i>
-            <span class="d-none d-sm-inline-block">Sign in</span>
-          </a>
-          <a href="#" class="btn btn-light custom-btn flex-fill">
-            <i class="fa fa-briefcase fa-2x d-block mb-1"></i>
-            <span class="d-none d-sm-inline-block">My Orders</span>
-          </a>
-          <a data-bs-toggle="offcanvas" href="#offcanvas_cart" class="btn btn-light flex-fill custom-btn">
-            <i class="fa fa-shopping-cart fa-2x d-block mb-1"></i>
-            <span class="d-none d-sm-inline-block">My cart</span>
-          </a>
+      <div class="row gy-3 align-items-center">
+        <div class="col-lg-1 col-sm-4 col-4">
+          <a href="#" class="navbar-brand" style="color: white!important;">
+            PACCOM
+          </a> <!-- brand end.// -->
         </div>
-      </div> <!-- col end.// -->
-<!--      <div class="col-lg-8 col-md-12 col-12">-->
-<!--        <form class="">-->
-<!--          <div class="input-group input-group-lg">-->
-<!--            <input class="form-control form-control-lg rounded-pill" type="search" placeholder="search" [(ngModel)]="searchTerm" style="font-size: 1.5rem;">-->
-<!--            <div class="search-results" *ngIf="images">-->
-<!--              <div class="row">-->
-<!--                <div class="col-md-12">-->
-<!--                  <div class="search-result-item" *ngFor="let image of images">-->
-<!--&lt;!&ndash;                    <img [src]="image.url" width="10%" alt="{{image.name}}">&ndash;&gt;-->
-<!--                    <p style="color: black!important;">{{image?.name}}</p>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <span class="input-group-append">-->
-<!--        <button class="btn btn-lg rounded-pill border-0" type="button" (click)="searchImages()">-->
-<!--          <i class="fa fa-search" style="color: white"></i>-->
-<!--        </button>-->
-<!--      </span>-->
-<!--          </div>-->
-<!--        </form>-->
-<!--      </div>-->
+        <div class="order-lg-last col-lg-3 col-sm-8 col-8">
+          <div class="d-flex justify-content-end">
+            <a href="#" class="btn btn-light custom-btn flex-fill">
+              <i class="fa fa-database fa-2x d-block mb-1"></i>
+              <span class="d-none d-sm-inline-block">Hub</span>
+            </a>
+            <a href="#" class="btn btn-light custom-btn flex-fill">
+              <i class="fa fa-user fa-2x d-block mb-1"></i>
+              <span class="d-none d-sm-inline-block">Sign in</span>
+            </a>
+            <a href="#" class="btn btn-light custom-btn flex-fill">
+              <i class="fa fa-briefcase fa-2x d-block mb-1"></i>
+              <span class="d-none d-sm-inline-block">My Orders</span>
+            </a>
+            <a data-bs-toggle="offcanvas" href="#offcanvas_cart" class="btn btn-light flex-fill custom-btn">
+              <i class="fa fa-shopping-cart fa-2x d-block mb-1"></i>
+              <span class="d-none d-sm-inline-block">My cart</span>
+            </a>
+          </div>
+        </div> <!-- col end.// -->
+        <!--      <div class="col-lg-8 col-md-12 col-12">-->
+        <!--        <form class="">-->
+        <!--          <div class="input-group input-group-lg">-->
+        <!--            <input class="form-control form-control-lg rounded-pill" type="search" placeholder="search" [(ngModel)]="searchTerm" style="font-size: 1.5rem;">-->
+        <!--            <div class="search-results" *ngIf="images">-->
+        <!--              <div class="row">-->
+        <!--                <div class="col-md-12">-->
+        <!--                  <div class="search-result-item" *ngFor="let image of images">-->
+        <!--&lt;!&ndash;                    <img [src]="image.url" width="10%" alt="{{image.name}}">&ndash;&gt;-->
+        <!--                    <p style="color: black!important;">{{image?.name}}</p>-->
+        <!--                  </div>-->
+        <!--                </div>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--            <span class="input-group-append">-->
+        <!--        <button class="btn btn-lg rounded-pill border-0" type="button" (click)="searchImages()">-->
+        <!--          <i class="fa fa-search" style="color: white"></i>-->
+        <!--        </button>-->
+        <!--      </span>-->
+        <!--          </div>-->
+        <!--        </form>-->
+        <!--      </div>-->
 
-      <div class="col-lg-8 col-md-12 col-12">
-        <form class="">
-          <div class="input-group input-group-lg">
-            <input class="form-control form-control-lg rounded-pill" type="search" placeholder="search" [(ngModel)]="searchTerm" style="font-size: 1.5rem;" (keyup)="searchImages()">
-            <div class="search-results col-md-12 col-12 col-lg-12" *ngIf="images">
-              <div class="row">
-                <div class="col-lg-3 col-md-3 col-3" *ngFor="let image of images">
-                  <div class="search-result-item card">
-                    <img class="card-img-top" [src]="image.url" style="width: 100%!important;" alt="{{image.name}}">
-                    <div class="card-body">
-                      <h5 class="card-title">{{image.name}}</h5>
+        <div class="col-lg-8 col-md-12 col-12">
+          <form class="">
+            <div class="input-group input-group-lg">
+              <input class="form-control form-control-lg rounded-pill" type="search" placeholder="search" [(ngModel)]="searchTerm" style="font-size: 1.5rem;" (keyup)="searchImages()">
+              <div class="search-results col-md-12 col-12 col-lg-12" *ngIf="images">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-3" *ngFor="let image of images">
+                    <div class="search-result-item card">
+                      <img class="card-img-top" [src]="image.url" style="width: 100%!important;" alt="{{image.name}}">
+                      <div class="card-body">
+                        <h5 class="card-title">{{image.name}}</h5>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <span class="input-group-append">
+              <span class="input-group-append">
       <button class="btn btn-lg rounded-pill border-0" type="button" (click)="searchImages()">
         <i class="fa fa-search" style="color: white"></i>
       </button>
     </span>
-          </div>
-        </form>
+            </div>
+          </form>
 
-      </div>
+        </div>
 
-      <!-- col end.// -->
-    </div> <!-- row end.// -->
-  </div> <!-- container end.// -->
+        <!-- col end.// -->
+      </div> <!-- row end.// -->
+    </div> <!-- container end.// -->
 
   </section> <!-- header-main end.// -->
   <nav class="navbar navbar-light bg-primary border-top navbar-expand-lg" [class.hidden]="hideNav">
@@ -91,6 +91,9 @@
 
       <div class="collapse navbar-collapse" id="navbar_main">
         <ul class="navbar-nav fs-4">
+          <li class="nav-item flex-fill">
+            <a class="nav-link ps-0" data-bs-toggle="modal" data-bs-target="#myModal"> All Categories </a>
+          </li>
           <li class="nav-item flex-fill">
             <a class="nav-link ps-0" href="#"> Outlet & Switches </a>
           </li>
@@ -135,5 +138,128 @@
       </div> <!-- collapse end.// -->
     </div> <!-- container end.// -->
   </nav> <!-- navbar end.// -->
+  <div class="modal left fade" id="myModal" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-xl modal-dialog-slideout"  [ngStyle]="{ 'width.px': showNewCategory ? 1000 : 600 }" role="document">
+      <div class="modal-content">
 
+        <div class="modal-header">
+          <h2 class="modal-title" id="myModalLabel">All Categories</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <!-- Left Column -->
+            <div [ngClass]="{'col-lg-6': showNewCategory, 'col-lg-12': !showNewCategory}">
+
+              <ul class="list-unstyled">
+                <li (click)="toggleNewCategory()">
+                  <a href="#">
+                    <div class="category-item">
+                      <img class="img department" src="https://assets.woolworths.com.au/images/1005/categories/1_39C04E4.jpg?impolicy=wowsmkqiema&amp;w=64&amp;h=64" alt="Mother's Day">
+                      &nbsp;&nbsp;&nbsp;
+                      <h3>Outlet &amp; Switches <b><span class="pull-right" style="font-size: 18pt;">&gt;</span></b></h3>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <div class="category-item">
+                      <img class="img department" src="https://assets.woolworths.com.au/images/1005/categories/1_39C04E4.jpg?impolicy=wowsmkqiema&amp;w=64&amp;h=64" alt="Electrical Accessories">
+                      &nbsp;&nbsp;&nbsp;<h3>Electrical Accessories <b><span class="pull-right" style="font-size: 18pt;">&gt;</span></b></h3>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <div class="category-item">
+                      <img class="img department" src="https://assets.woolworths.com.au/images/1005/categories/1_39C04E4.jpg?impolicy=wowsmkqiema&amp;w=64&amp;h=64" alt="Circuit Protection">
+                      &nbsp;&nbsp;&nbsp;<h3>Circuit Protection <b><span class="pull-right" style="font-size: 18pt;">&gt;</span></b></h3>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <div class="category-item">
+                      <img class="img department" src="https://assets.woolworths.com.au/images/1005/categories/1_39C04E4.jpg?impolicy=wowsmkqiema&amp;w=64&amp;h=64" alt="Lighting">
+                      &nbsp;&nbsp;&nbsp;<h3>Lighting <b><span class="pull-right" style="font-size: 18pt;">&gt;</span></b></h3>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <div class="category-item">
+                      <img class="img department" src="https://assets.woolworths.com.au/images/1005/categories/1_39C04E4.jpg?impolicy=wowsmkqiema&amp;w=64&amp;h=64" alt="Industrial">
+                      &nbsp;&nbsp;&nbsp;<h3>Industrial <b><span class="pull-right" style="font-size: 18pt;">&gt;</span></b></h3>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <div class="category-item">
+                      <img class="img department" src="https://assets.woolworths.com.au/images/1005/categories/1_39C04E4.jpg?impolicy=wowsmkqiema&amp;w=64&amp;h=64" alt="Cable Management">
+                      &nbsp;&nbsp;&nbsp;<h3>Cable Management <b><span class="pull-right" style="font-size: 18pt;">&gt;</span></b></h3>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="category-item">
+                      <img class="img department" src="https://assets.woolworths.com.au/images/1005/categories/1_39C04E4.jpg?impolicy=wowsmkqiema&amp;w=64&amp;h=64" alt="Fasteners">
+                      &nbsp;&nbsp;&nbsp;<h3>Fasteners <b><span class="pull-right" style="font-size: 18pt;">&gt;</span></b>
+                    </h3>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="category-item">
+                      <img class="img department" src="https://assets.woolworths.com.au/images/1005/categories/1_39C04E4.jpg?impolicy=wowsmkqiema&amp;w=64&amp;h=64" alt="Tools">
+                      &nbsp;&nbsp;&nbsp;<h3>Tools <b><span class="pull-right" style="font-size: 18pt;">&gt;</span></b>
+                    </h3>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="category-item">
+                      <img class="img department" src="https://assets.woolworths.com.au/images/1005/categories/1_39C04E4.jpg?impolicy=wowsmkqiema&amp;w=64&amp;h=64" alt="Ventilations">
+                      &nbsp;&nbsp;&nbsp;<h3>Ventilations <b><span class="pull-right" style="font-size: 18pt;">&gt;</span></b>
+                    </h3>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="category-item">
+                      <img class="img department" src="https://assets.woolworths.com.au/images/1005/categories/1_39C04E4.jpg?impolicy=wowsmkqiema&amp;w=64&amp;h=64" alt="Merchandise">
+                      &nbsp;&nbsp;&nbsp;<h3>Merchandise <b><span class="pull-right" style="font-size: 18pt;">&gt;</span></b>
+                    </h3>
+                    </div>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="col-md-6" *ngIf="showNewCategory">
+              <ul class="list-unstyled">
+                <li>
+                  <div class="category-item">
+                    <img class="img department" src="https://assets.woolworths.com.au/images/1005/categories/1_39C04E4.jpg?impolicy=wowsmkqiema&amp;w=64&amp;h=64" alt="Mother's Day">
+                    &nbsp;&nbsp;&nbsp;
+                    <h3>New Category <b><span class="pull-right">&gt;</span></b></h3>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div></div>
+
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
 </header> <!-- section-header end.// -->

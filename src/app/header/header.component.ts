@@ -8,6 +8,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   hideNav = false;
+  showNewCategory = false;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
@@ -15,6 +16,10 @@ export class HeaderComponent {
     this.hideNav = (window.pageYOffset > 0);
   }
 
+  toggleNewCategory() {
+    this.showNewCategory = !this.showNewCategory;
+    console.log(this.showNewCategory);
+  }
   showNavbar() {
     // show the navbar when user hovers over the header
     this.hideNav = false;
@@ -36,23 +41,23 @@ export class HeaderComponent {
     this.images = [
       {
         url: 'https://www.voltexelectrical.com.au/images/product/large/165A-7RFrontSide.jpg',
-        name: 'Mountain'
+        name: 'Red 7 Hole Neutral / Active Link - 165A'
       },
       {
         url: 'https://www.voltexelectrical.com.au/images/product/large/165A-7RFrontSide.jpg',
-        name: 'Beach'
+        name: '350A 7 Hole Neutral / Active Link - Red'
       },
       {
         url: 'https://www.voltexelectrical.com.au/images/product/large/165A-7RFrontSide.jpg',
-        name: 'City'
+        name: 'Red 13 Hole Neutral / Active Link - 165A'
       },
       {
         url: 'https://www.voltexelectrical.com.au/images/product/large/165A-7RFrontSide.jpg',
-        name: '2'
+        name: 'Red 8 Hole Neutral / Active Link - 165A'
       },
       {
         url: 'https://www.voltexelectrical.com.au/images/product/large/165A-7RFrontSide.jpg',
-        name: '3'
+        name: 'Red 9 Hole Neutral / Active Link - 165A'
       }
     ];
   }
